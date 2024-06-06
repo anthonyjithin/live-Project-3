@@ -41,8 +41,8 @@ public class AddRemoveItemBasket extends Hooks{
 		ShopProductPage shopProd = new ShopProductPage();
 		ExtentManager.pass("Reached product page");
 		//Assertion for current price
-		//Assert.assertEquals(shopProd.getCurrentPrice().getText(), "$19.13");
-		//Assert.assertEquals(shopProd.getCurrentPrice().getText(), "$19.13");
+		//Assert.assertEquals(shopProd.getCurrentPrice().getText(), "$19.12");
+		//Assert.assertEquals(shopProd.getCurrentPrice().getText(), "$19.12");
 		try {
 			Assert.assertEquals(shopProd.getCurrentPrice().getText(), "$19.12");
 			ExtentManager.pass("The current price amount matches the expected amount.");
